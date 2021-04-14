@@ -1,0 +1,84 @@
+<!-- call home page index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='Welcome to the most serene hotel in West Africa'>
+    <meta name='keyword' content="hotel, nigeria, hotel, relaxing">
+    <!--importing stylesheet (css file)-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hotel JR | About </title>
+  </head>
+
+  <body>
+    <header>
+      <!-- navigation/showcase here -->
+      <nav id="navbar">
+        <div class="container">
+          <!-- if container was outside nav elements, background would not reach across page (restricted inside the container) -->
+          <!--no dupes-->
+          <h1 class="logo"> <a href="index.html">HJR</a> </h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <section id="about-info" class="bg-light py-3">
+      <div class="container">
+        <div class="info-left">
+          <h1 class="l-heading"> <span class="text-primary"> About </span> Hotel JR</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorum corrupti velit labore ex molestiae
+            sit quam error. Illo amet veniam minus aut voluptate quaerat accusamus ab tenetur vitae distinctio?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis praesentium velit minima consequatur
+            eius inventore suscipit labore mollitia id quas.</p>
+        </div>
+        <div class="info-right">
+          <img src="./image_resources/pexels-leonardo-resized.jpg" alt="hotel">
+        </div>
+      </div>
+    </section>
+
+    <div class="clr"></div>
+    <!--have to add clr's since we have floats?-->
+
+    <section id="testimonials" class="py-3">
+      <!--bg image-->
+      <div class="container">
+        <!--container put in center-->
+        <h2 class="l-heading">What Our Guests Say</h2>
+        <div class="testimonial bg-primary">
+          <img src="./image_resources/person-1.jpg" alt="Ashley">
+          <h3>"Best Hotel in Nigeria!"</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex esse. Incidunt eos libero quam error
+            fugiat, minima sint minus pariatur repellat aliquid ab neque cum ea laborum mollitia, aperiam repudiandae,
+            temporibus labore consectetur sed. Voluptate quod a debitis veniam.</p>
+        </div>
+        <div class="testimonial bg-primary">
+          <img src="./image_resources/person-2.jpg" alt="Lori">
+          <h3>"I Could Stay Forever!"</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex esse. Incidunt eos libero quam error
+            fugiat, minima sint minus pariatur repellat aliquid ab neque cum ea laborum mollitia, aperiam repudiandae,
+            temporibus labore consectetur sed. Voluptate quod a debitis veniam.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer id="main-footer">
+      <p>Hotel JR &copy; 2021, All Rights Reserved</p>
+    </footer>
+
+  </body>
+
+</html>

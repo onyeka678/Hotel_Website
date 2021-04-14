@@ -1,0 +1,303 @@
+/* Reset */
+* {
+  /* remove default browser  mar/pad */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*boxes w/ padding shoudn't add to width of box*/
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+  line-height: 1.7em;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  /* spacing underneath all headings */
+  padding-bottom: 20px;
+}
+
+p {
+  /* paragraphs: margin top/bottom=10 left/right=0 */
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+/* aka class we use throughout the site */
+.container {
+  /*push it all to middle*/
+  margin: auto;
+  max-width: 1100px;
+  /*add responsiveness*/
+  overflow: auto; /*always shows background color no matter how much browser stretches*/
+  padding: 0 20px;
+}
+
+.text-primary {
+  /* may change to green */
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  /* want to format links into buttons just by using this */
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr {
+  clear: both; /*clr floats bc */
+}
+
+.l-heading {
+  font-size: 40px;
+}
+
+/* Padding (utility) */
+.py-1 {
+  /*padding up and down, y-axis*/
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+
+/* Navigation bar */
+#navbar {
+  background: #333;
+  color: white; /* must make links white sep*/
+  overflow: auto;
+  /*so bg shows no matter what*/
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  /* move logo to left, list to right */
+  float: left;
+  padding-top: 20px; /*push down a tad*/
+}
+
+#navbar ul {
+  /* list to right */
+  list-style: none; /*remove bullets*/
+  float: right; /*move entire list to right*/
+}
+
+#navbar ul li {
+  /* move list items horizontally */
+  float: left;
+}
+
+#navbar ul li a {
+  /*list item links*/
+  display: block; /*lets us add padding*/
+  padding: 20px;
+  text-align: center;
+}
+
+/* add psuedo-selector of 'hover' */
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a; /*may chng to green*/
+}
+
+/* Showcase */
+#showcase {
+  /* single dot = looking inside current folder,
+   double dot = looking outside */
+  background: url("../image_resources/showcase_img_filter.jpg") no-repeat center
+    center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color: white;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home Info */
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url("../image_resources/pexels-nadi-lindsay-cropped.jpg")
+    no-repeat center center/cover;
+  min-height: 100%; /*wnt img to take up whole space*/
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden; /*anything outside, it goes away */
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  float: left; /*go horizontal*/
+  width: 33.3%;
+  padding: 50px; /*border-box value in box-sizing makes it so padding not added to width*/
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* About Info */
+#about-info .info-right {
+  /*space that img will take up, div*/
+  float: right;
+  width: 50%;
+  min-height: 100%; /*prevent css from making img height smaller?*/
+}
+
+#about-info .info-right img {
+  /* images are automat inline */
+  display: block; /*want to set margin to auto put in middle*/
+  margin: auto; /*setting to center of */
+  width: 80%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 600px;
+  background: url("../image_resources/test-bg.jpg") no-repeat center
+    center/cover;
+  padding-top: 40px;
+}
+
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  /*box, pic, words*/
+  padding: 20px;
+  margin-bottom: 40px; /*some txt overflows :(*/
+  border-radius: 5px;
+  opacity: 0.9;
+  /* want the words to show thru? add overlay property */
+}
+
+#testimonials .testimonial img {
+  /*pic alone*/
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block; /*nxt line*/
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  /* chng color of input obrder when clicked on (aka focus-states of input */
+  outline: none;
+  border-color: #f7c08a;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px; /*clear both floats in html so padding show*/
+}

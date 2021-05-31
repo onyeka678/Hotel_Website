@@ -154,7 +154,7 @@ p {
 #showcase {
   /* single dot = looking inside current folder,
    double dot = looking outside */
-  background: url("../image_resources/showcase_img_filter.jpg") no-repeat center
+  background: url("./image_resources/showcase_img_filter.jpg") no-repeat center
     center/cover;
   height: 600px;
 }
@@ -183,7 +183,7 @@ p {
 #home-info .info-img {
   float: left;
   width: 50%;
-  background: url("../image_resources/pexels-nadi-lindsay-cropped.jpg")
+  background: url("./image_resources/pexels-nadi-lindsay-cropped.jpg")
     no-repeat center center/cover;
   min-height: 100%; /*wnt img to take up whole space*/
 }
@@ -238,7 +238,7 @@ p {
 /* Testimonials */
 #testimonials {
   height: 600px;
-  background: url("../image_resources/test-bg.jpg") no-repeat center
+  background: url("./image_resources/test-bg.jpg") no-repeat center
     center/cover;
   padding-top: 40px;
 }
